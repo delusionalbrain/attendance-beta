@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- ghatiya sa timetable copy kia hai chatgpt se -->
+    <h2>Weekly Timetable</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>History</td>
+                <td>English</td>
+                <td>PE</td>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Computer Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>History</td>
+                <td>Art</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>English</td>
+                <td>PE</td>
+                <td>Math</td>
+                <td>Computer Science</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>History</td>
+                <td>Art</td>
+                <td>PE</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>PE</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Computer Science</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="attendance.php" method="POST">
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" required>
+
+        <label for="status">Status:</label>
+        <select name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+
+        <button type="submit">Submit karo plzzzz</button>
+    </form>
+    
+</body>
+</html>
